@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1764073484947,
@@ -24,6 +24,14 @@
                 {
                     "date": 1764073835021,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,12 @@\n             >\r\n               <button\r\n                 class=\"btn-primary px-6 py-3 rounded-full font-medium text-lg\"\r\n               >\r\n-                <a href=\"#catalog\">\r\n+                 <a\r\n+          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%3F%20Spesial%20Hari%20ini.\"\r\n+          target=\"_blank\"\r\n+        >\r\n                   <i class=\"fas fa-shopping-bag mr-2\"></i> Beli Sekarang</a\r\n                 >\r\n               </button>\r\n               <!-- <button\r\n"
+                },
+                {
+                    "date": 1764075552514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,9 +274,9 @@\n               <button\r\n                 class=\"btn-primary px-6 py-3 rounded-full font-medium text-lg\"\r\n               >\r\n                 <a\r\n-                  href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%3F%20Spesial%20Hari%20ini.\"\r\n+                  href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%20Spesial%20Hari%20ini.\"\r\n                   target=\"_blank\"\r\n                 >\r\n                   <i class=\"fas fa-shopping-bag mr-2\"></i> Beli Sekarang</a\r\n                 >\r\n"
+                },
+                {
+                    "date": 1764075580986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -952,9 +952,9 @@\n           Rasakan sendiri kenyamanan dan kepercayaan diri dengan DANYA HIJAB.\r\n           Dapatkan penawaran spesial hari ini!\r\n         </p>\r\n         <a\r\n-          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%3F%20Spesial%20Hari%20ini.\"\r\n+          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%20Spesial%20Hari%20ini.\"\r\n           target=\"_blank\"\r\n         >\r\n           <button\r\n             class=\"btn-primary px-8 py-3 rounded-full font-medium text-lg\"\r\n"
                 }
             ],
             "date": 1764073484947,
