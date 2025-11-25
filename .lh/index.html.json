@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1764073484947,
@@ -12,6 +12,14 @@
                 {
                     "date": 1764073504570,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -863,9 +863,9 @@\n             </div>\r\n             <div class=\"faq-answer mt-4\">\r\n               <p class=\"text-gray-600\">\r\n                 Anda dapat memesan melalui website ini dengan mengklik tombol\r\n-                \"Beli Sekarang\", melalui WhatsApp kami di 0812-3456-7890, atau\r\n+                \"Beli Sekarang\", melalui WhatsApp kami di 0881082717519, atau\r\n                 melalui marketplace official kami di Shopee dan Tokopedia.\r\n               </p>\r\n             </div>\r\n           </div>\r\n"
+                },
+                {
+                    "date": 1764073649055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,9 +949,9 @@\n           Rasakan sendiri kenyamanan dan kepercayaan diri dengan DANYA HIJAB.\r\n           Dapatkan penawaran spesial hari ini!\r\n         </p>\r\n         <a\r\n-          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20Silk.%20Apakah%20masih%20tersedia%3F\"\r\n+          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20masih%20tersedia%3F\"\r\n           target=\"_blank\"\r\n         >\r\n           <button\r\n             class=\"btn-primary px-8 py-3 rounded-full font-medium text-lg\"\r\n@@ -1075,9 +1075,9 @@\n             <h4 class=\"text-lg font-bold mb-4\">Kontak Kami</h4>\r\n             <ul class=\"space-y-2\">\r\n               <li class=\"flex items-center\">\r\n                 <i class=\"fas fa-phone-alt text-pink-300 mr-3\"></i>\r\n-                <span class=\"text-gray-400\">0812-3456-7890</span>\r\n+                <span class=\"text-gray-400\">0881-0827-17519</span>\r\n               </li>\r\n               <li class=\"flex items-center\">\r\n                 <i class=\"fas fa-envelope text-pink-300 mr-3\"></i>\r\n                 <span class=\"text-gray-400\">info@hijabelegant.com</span>\r\n"
+                },
+                {
+                    "date": 1764073761992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -949,9 +949,9 @@\n           Rasakan sendiri kenyamanan dan kepercayaan diri dengan DANYA HIJAB.\r\n           Dapatkan penawaran spesial hari ini!\r\n         </p>\r\n         <a\r\n-          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20masih%20tersedia%3F\"\r\n+          href=\"https://wa.me/62881082717519?text=Halo%20kak%2C%20saya%20ingin%20membeli%20Hijab%20.%20Apakah%20Ada%20Penawaran%3F%20Spesial%20Hari%20ini.\"\r\n           target=\"_blank\"\r\n         >\r\n           <button\r\n             class=\"btn-primary px-8 py-3 rounded-full font-medium text-lg\"\r\n"
                 }
             ],
             "date": 1764073484947,
