@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hijab Premium | Elegan, Nyaman, Berkualitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #f8d7da;
+        --secondary: #e9c7cc;
+        --accent: #c8959b;
+        --text: #5a4a4c;
+        --light: #f9f3f4;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: var(--text);
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Playfair Display", serif;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--secondary) 100%
+        );
+      }
+
+      .btn-primary {
+        background-color: var(--accent);
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #b5838b;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(200, 149, 155, 0.3);
+      }
+
+      .section-padding {
+        padding: 5rem 0;
+      }
+
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+      }
+
+      .testimonial-card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .price-card {
+        border: 2px solid var(--primary);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .price-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .price-card.featured {
+        border-color: var(--accent);
+        background-color: var(--light);
+        position: relative;
+        transform: scale(1.05);
+      }
+
+      .price-card.featured::before {
+        content: "POPULER";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--accent);
+        color: white;
+        padding: 4px 16px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid #eee;
+        padding: 1.5rem 0;
+      }
+
+      .faq-question {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      .faq-answer.active {
+        max-height: 500px;
+      }
+
+      .hijab-catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .hijab-item {
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .hijab-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .hijab-image {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-pink-200 flex items-center justify-center mr-3"
+          >
+            <img
+              class="rounded-full w-16 h-16 md:w-20 md:h-20 object-cover"
+              src="/image/logo.jpg"
+              alt=""
+            />
+          </div>
+          <h1 class="text-xl font-bold text-gray-800">
+            <span class="text-pink-500">DANYA</span> HIJAB
+          </h1>
+        </div>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-pink-500 transition"
+            >Beranda</a
+          >
+          <a href="#about" class="text-gray-700 hover:text-pink-500 transition"
+            >Tentang</a
+          >
+          <a
+            href="#features"
+            class="text-gray-700 hover:text-pink-500 transition"
+            >Fitur</a
+          >
+          <a
+            href="#catalog"
+            class="text-gray-700 hover:text-pink-500 transition"
+            >Katalog</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-700 hover:text-pink-500 transition"
+            >Testimoni</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <button class="md:hidden text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+          <!-- <button class="btn-primary px-4 py-2 rounded-full font-medium">
+            <i class="fas fa-shopping-bag mr-2"></i> Beli Sekarang
+          </button> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-red-50 to-red-200">
+      <div class="container mx-auto px-4 py-16 md:py-24">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6"
+            >
+              Hijab Premium untuk Penampilan
+              <span class="text-pink-600">Lebih Percaya Diri</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+              Dibuat dengan bahan pilihan terbaik yang nyaman, adem, dan tidak
+              mudah kusut. Cocok untuk aktivitas harian maupun acara formal.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <button
+                class="btn-primary px-6 py-3 rounded-full font-medium text-lg"
+              >
+                <a href="#catalog">
+                  <i class="fas fa-shopping-bag mr-2"></i> Beli Sekarang</a
+                >
+              </button>
+              <!-- <button
+                class="bg-white text-gray-800 px-6 py-3 rounded-full font-medium text-lg border border-gray-300 hover:bg-gray-50 transition"
+              >
+                <i class="fas fa-play-circle mr-2"></i> Lihat Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+              <div
+                class="w-80 h-80 bg-white rounded-full shadow-lg overflow-hidden"
+              >
+                <img src="/image/hijab.jpeg" class="object-cover" />
+              </div>
+              <!-- <div
+                class="absolute -bottom-4 -left-4 w-40 h-40 bg-pink-100 rounded-2xl shadow-lg z-10"
+              ></div>
+              <div
+                class="absolute -top-4 -right-4 w-32 h-32 bg-pink-200 rounded-2xl shadow-lg"
+              ></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Kenapa Memilih <span class="text-pink-500">DANYA</span> HIJAB?
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            DANYA HIJAB hadir dengan kualitas premium yang memberikan kenyamanan
+            maksimal sepanjang hari.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-pink-50 p-6 rounded-xl card-hover">
+                <div class="feature-icon">
+                  <i class="fas fa-feather text-pink-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">
+                  Bahan Premium
+                </h3>
+                <p class="text-gray-600 text-center">
+                  Terbuat dari bahan premium yang ringan dan tidak membuat
+                  gerah.
+                </p>
+              </div>
+              <div class="bg-pink-50 p-6 rounded-xl card-hover">
+                <div class="feature-icon">
+                  <i class="fas fa-palette text-pink-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">
+                  Warna Aesthetic & Kekinian
+                </h3>
+                <p class="text-gray-600 text-center">
+                  Tersedia puluhan pilihan warna pastel dan earth tone yang
+                  cocok dipadukan dengan berbagai outfit.
+                </p>
+              </div>
+              <div class="bg-pink-50 p-6 rounded-xl card-hover">
+                <div class="feature-icon">
+                  <i class="fas fa-wind text-pink-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">
+                  Harga Terjangkau
+                </h3>
+                <p class="text-gray-600 text-center">
+                  Dapatkan hijab premium dengan harga yang bersahabat di
+                  kantong.
+                </p>
+              </div>
+              <div class="bg-pink-50 p-6 rounded-xl card-hover">
+                <div class="feature-icon">
+                  <i class="fas fa-tshirt text-pink-500 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">
+                  Tidak Mudah Kusut
+                </h3>
+                <p class="text-gray-600 text-center">
+                  Tetap rapi sepanjang hari tanpa perlu sering-sering disetrika.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2 md:pl-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Hijab Berkualitas untuk Aktivitas Modern
+            </h3>
+            <p class="text-gray-600 mb-4">
+              DANYA HIJAB dirancang khusus untuk wanita aktif masa kini yang
+              menginginkan penampilan elegan tanpa mengorbankan kenyamanan.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Dengan bahan pilihan terbaik, hijab kami cocok untuk berbagai
+              kesempatan, mulai dari aktivitas harian di kantor, kuliah, hingga
+              acara formal seperti pernikahan dan pertemuan penting.
+            </p>
+
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-check text-pink-500"></i>
+              </div>
+              <p class="text-gray-700">Cocok untuk semua bentuk wajah</p>
+            </div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-check text-pink-500"></i>
+              </div>
+              <p class="text-gray-700">
+                Tersedia dalam berbagai warna dan motif
+              </p>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-check text-pink-500"></i>
+              </div>
+              <p class="text-gray-700">
+                Mudah dipadukan dengan berbagai outfit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="section-padding bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Katalog <span class="text-pink-500">DANYA</span> HIJAB
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Temukan gaya hijab yang sesuai dengan kepribadian dan kebutuhan
+            Anda.
+          </p>
+        </div>
+
+        <div class="hijab-catalog">
+          <div class="hijab-item">
+            <div
+              class="hijab-image"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Hijab Segi Empat
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Versatile dan mudah dipadukan dengan berbagai outfit.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 89.000</span>
+                <button class="btn-primary px-4 py-2 rounded-full text-sm">
+                  <i class="fas fa-shopping-cart mr-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hijab-item">
+            <div
+              class="hijab-image"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Hijab Segi Empat
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Versatile dan mudah dipadukan dengan berbagai outfit.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 89.000</span>
+                <button class="btn-primary px-4 py-2 rounded-full text-sm">
+                  <i class="fas fa-shopping-cart mr-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hijab-item">
+            <div
+              class="hijab-image"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Hijab Instan</h3>
+              <p class="text-gray-600 mb-4">
+                Praktis, cocok untuk yang sibuk dan selalu terburu-buru.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 129.000</span>
+                <button class="btn-primary px-4 py-2 rounded-full text-sm">
+                  <i class="fas fa-shopping-cart mr-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hijab-item">
+            <div
+              class="hijab-image"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1584302179602-e4813bb3d0a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Hijab Bergo</h3>
+              <p class="text-gray-600 mb-4">
+                Elegan dan cocok untuk acara formal atau pertemuan penting.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 149.000</span>
+                <button class="btn-primary px-4 py-2 rounded-full text-sm">
+                  <i class="fas fa-shopping-cart mr-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hijab-item">
+            <div
+              class="hijab-image"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1621695499570-406a384afb2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Hijab Pashmina
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Lebar dan nyaman, memberikan kesan anggun dan feminin.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 99.000</span>
+                <button class="btn-primary px-4 py-2 rounded-full text-sm">
+                  <i class="fas fa-shopping-cart mr-1"></i> Beli
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="btn-primary px-8 py-3 rounded-full font-medium text-lg"
+          >
+            Lihat Semua Katalog <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Apa Kata Pelanggan Kami?
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Ribuan wanita telah merasakan kenyamanan dan kepercayaan diri dengan
+            DANYA HIJAB.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="testimonial-card p-6">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-pink-500"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Sari Dewi</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "DANYA HIJAB sangat nyaman dipakai seharian. Bahannya adem dan
+              tidak membuat gerah. Warna juga tidak mudah pudar meski sudah
+              dicuci berkali-kali."
+            </p>
+          </div>
+
+          <div class="testimonial-card p-6">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-pink-500"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Rina Amalia</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Saya suka sekali dengan koleksi hijab instannya. Praktis dan
+              cocok untuk saya yang sibuk bekerja. Desainnya elegan dan cocok
+              untuk ke kantor."
+            </p>
+          </div>
+
+          <div class="testimonial-card p-6">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-pink-500"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Maya Sari</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "DANYA HIJAB benar-benar premium. Bahannya lembut, tidak mudah
+              kusut, dan yang paling penting nyaman dipakai seharian. Sangat
+              worth it untuk harganya!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <!-- <section id="pricing" class="section-padding bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Pilihan Paket Hijab<span class="text-pink-500">Elegant</span>
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Dapatkan penawaran terbaik dengan harga spesial untuk pembelian
+            paket.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="price-card p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+              Paket Basic
+            </h3>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-gray-800">Rp 89.000</span>
+              <span class="text-gray-500 line-through ml-2">Rp 120.000</span>
+            </div>
+            <ul class="mb-8 space-y-4">
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>1 Hijab Segi Empat Premium</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Pilihan Warna Tersedia</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Kemasan Eksklusif</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-200 text-gray-800 py-3 rounded-full font-medium hover:bg-gray-300 transition"
+            >
+              Pilih Paket
+            </button>
+          </div>
+
+          <div class="price-card p-8 featured">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+              Paket Premium
+            </h3>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-gray-800">Rp 249.000</span>
+              <span class="text-gray-500 line-through ml-2">Rp 320.000</span>
+            </div>
+            <ul class="mb-8 space-y-4">
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>3 Hijab Pilihan (Segi Empat/Pashmina)</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Gratis Hijab Instan Senilai Rp 129.000</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Kemasan Eksklusif Premium</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Gratis Ongkir ke Seluruh Indonesia</span>
+              </li>
+            </ul>
+            <button class="w-full btn-primary py-3 rounded-full font-medium">
+              Pilih Paket
+            </button>
+          </div>
+
+          <div class="price-card p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+              Paket Luxury
+            </h3>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-gray-800">Rp 449.000</span>
+              <span class="text-gray-500 line-through ml-2">Rp 590.000</span>
+            </div>
+            <ul class="mb-8 space-y-4">
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>5 Hijab Pilihan Semua Model</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Gratis Hijab Bergo Senilai Rp 149.000</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Kemasan Luxury Box</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-pink-500 mr-3"></i>
+                <span>Gratis Ongkir Prioritas</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-200 text-gray-800 py-3 rounded-full font-medium hover:bg-gray-300 transition"
+            >
+              Pilih Paket
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="text-center mt-12 bg-pink-50 p-8 rounded-xl max-w-3xl mx-auto"
+        >
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">
+            Promo Spesial Hari Ini!
+          </h3>
+          <p class="text-gray-600 mb-6">
+            Beli 2 dapat 3! Dapatkan promo menarik dengan pembelian paket
+            Premium atau Luxury hari ini.
+          </p>
+          <div class="flex justify-center">
+            <div class="bg-white p-4 rounded-lg shadow-sm mr-4">
+              <div class="text-2xl font-bold text-pink-500">24</div>
+              <div class="text-gray-600 text-sm">Jam</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm mr-4">
+              <div class="text-2xl font-bold text-pink-500">59</div>
+              <div class="text-gray-600 text-sm">Menit</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+              <div class="text-2xl font-bold text-pink-500">43</div>
+              <div class="text-gray-600 text-sm">Detik</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Temukan jawaban untuk pertanyaan umum seputar produk dan layanan
+            kami.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Apakah hijab ini bergaransi?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Ya, semua produk DANYA HIJAB dilengkapi dengan garansi kualitas.
+                Jika terdapat cacat produksi, Anda dapat mengembalikan produk
+                dalam waktu 7 hari setelah penerimaan untuk penukaran.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Bagaimana cara order hijab?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Anda dapat memesan melalui website ini dengan mengklik tombol
+                "Beli Sekarang", melalui WhatsApp kami di 0812-3456-7890, atau
+                melalui marketplace official kami di Shopee dan Tokopedia.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Apa saja metode pembayaran yang tersedia?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Kami menerima pembayaran melalui transfer bank (BCA, Mandiri,
+                BNI, BRI), e-wallet (GoPay, OVO, Dana, LinkAja), serta kartu
+                kredit melalui payment gateway yang terpercaya.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Berapa lama waktu pengiriman?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Pengiriman reguler membutuhkan waktu 2-5 hari kerja, tergantung
+                lokasi pengiriman. Untuk pengiriman ekspres, produk akan dikirim
+                dalam 1-2 hari kerja. Kami bekerja sama dengan kurir terpercaya
+                seperti JNE, TIKI, dan GoSend.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Apakah tersedia COD (Cash on Delivery)?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Ya, kami menyediakan layanan COD untuk area Jakarta, Bogor,
+                Depok, Tangerang, dan Bekasi dengan tambahan biaya layanan
+                sebesar Rp 10.000.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3 class="text-xl font-bold text-gray-800">
+                Bagaimana kebijakan return dan refund?
+              </h3>
+              <i class="fas fa-chevron-down text-pink-500"></i>
+            </div>
+            <div class="faq-answer mt-4">
+              <p class="text-gray-600">
+                Kami menerima return untuk produk yang masih dalam kondisi tags
+                dan packaging lengkap dalam waktu 3 hari setelah penerimaan.
+                Refund akan diproses setelah produk kami terima dan inspeksi
+                selesai, membutuhkan waktu 3-5 hari kerja.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 hero-gradient">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          Tunggu Apa Lagi?
+        </h2>
+        <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+          Rasakan sendiri kenyamanan dan kepercayaan diri dengan DANYA HIJAB.
+          Dapatkan penawaran spesial hari ini!
+        </p>
+        <button class="btn-primary px-8 py-3 rounded-full font-medium text-lg">
+          <i class="fas fa-shopping-bag mr-2"></i> Beli Sekarang
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-pink-200 flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-heart text-pink-500"></i>
+              </div>
+              <h3 class="text-xl font-bold">
+                <span class="text-pink-300">DANYA</span>HIJAB
+              </h3>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Hijab premium dengan kualitas terbaik untuk penampilan elegan dan
+              percaya diri.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-pink-500 transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-pink-500 transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-pink-500 transition"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Tautan Cepat</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#catalog"
+                  class="text-gray-400 hover:text-white transition"
+                  >Katalog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-400 hover:text-white transition"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="text-gray-400 hover:text-white transition"
+                  >Harga</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Bantuan</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Cara Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Kebijakan Pengembalian</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Syarat & Ketentuan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Kontak Kami</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt text-pink-300 mr-3"></i>
+                <span class="text-gray-400">0812-3456-7890</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-pink-300 mr-3"></i>
+                <span class="text-gray-400">info@hijabelegant.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-pink-300 mr-3 mt-1"></i>
+                <span class="text-gray-400"
+                  >Jl. Kemang Raya No. 12, Jakarta Selatan 12730</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2023 HijabElegant. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a
+      href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20produk%20Hijab%20Elegant"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          answer.classList.toggle("active");
+
+          const icon = question.querySelector("i");
+          if (answer.classList.contains("active")) {
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+          } else {
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          }
+        });
+      });
+
+      // Countdown Timer
+      function updateCountdown() {
+        const countdownElement = document.querySelector(".text-center.mt-12");
+        if (!countdownElement) return;
+
+        const hoursElement = countdownElement.querySelector(
+          ".bg-white:nth-child(1) .text-2xl"
+        );
+        const minutesElement = countdownElement.querySelector(
+          ".bg-white:nth-child(2) .text-2xl"
+        );
+        const secondsElement = countdownElement.querySelector(
+          ".bg-white:nth-child(3) .text-2xl"
+        );
+
+        if (!hoursElement || !minutesElement || !secondsElement) return;
+
+        // Set target date (24 hours from now)
+        const now = new Date();
+        const target = new Date(now);
+        target.setHours(now.getHours() + 24);
+
+        const diff = target - now;
+
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        hoursElement.textContent = hours.toString().padStart(2, "0");
+        minutesElement.textContent = minutes.toString().padStart(2, "0");
+        secondsElement.textContent = seconds.toString().padStart(2, "0");
+      }
+
+      // Update countdown every second
+      setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial call
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
